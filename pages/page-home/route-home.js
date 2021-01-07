@@ -12,6 +12,16 @@ Router.route(
     {
         // Route name
         name: 'pageHome',
+		
+		// Page Data
+		data: {
+			title: 'My Teams',
+			actions: {
+				next: {
+					text: 'New Team'
+				}
+			}
+		}
 
     },
 

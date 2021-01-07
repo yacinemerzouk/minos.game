@@ -13,6 +13,10 @@ Router.route(
         // Route name
         name: 'pageTwo',
 
+		// Page Data
+		data: {
+			title: 'Page Two',
+		}
     },
 
 );

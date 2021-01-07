@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+FILENAME=${1?Error: no filename given}
+echo "==========================================================="
+echo "Creating component $FILENAME ..."
+echo "==========================================================="
+mkdir ./components/component-$FILENAME
+mkdir ./components/component-$FILENAME/client
+mkdir ./components/component-$FILENAME/server
+cp ./private/component-template/component.html.tmpl ./components/component-$FILENAME/client/component-$FILENAME.html
+cp ./private/component-template/component.js.tmpl ./components/component-$FILENAME/client/component-$FILENAME.js
+cp ./private/component-template/component.less.tmpl ./components/component-$FILENAME/client/component-$FILENAME.less
+cp ./private/component-template/component-publications.js.tmpl ./components/component-$FILENAME/server/component-$FILENAME-publications.js
+cp ./private/component-template/component-methods.js.tmpl ./components/component-$FILENAME/server/component-$FILENAME-methods.js
+echo "COMPONENT CREATED! Don't forget to search-and-replace:"
+echo "Replace FILE_NAME_GOES_HERE with file name"
+echo "Replace TEMPLATE_NAME_GOES_HERE with camel-cased filename"
+echo "==========================================================="

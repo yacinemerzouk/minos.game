@@ -1,6 +1,7 @@
 <template name="genericLayout">
 	
     {{#momentum plugin='iron-router' options=transition}}
+		{{>componentNavbar page=this}}
     	{{>yield}}			
     {{/momentum}}
 

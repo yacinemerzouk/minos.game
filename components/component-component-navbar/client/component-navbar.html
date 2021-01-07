@@ -1,0 +1,27 @@
+<template name="componentNavbar">
+
+        <div id="component-navbar" class="component-navbar" hook="component-navbar">
+
+			{{#if page.actions.previous}}
+				<div class="navbar-left">
+					<a href="#" class="navigate-left">{{page.actions.previous.text}}</a>
+				</div>
+			{{else}}
+				{{#if getPreviousPage}}	
+					<div class="navbar-left">
+						<a href="{{getPreviousPage}}" class="navigate-left">Back</a>
+					</div>
+				{{/if}}
+			{{/if}}
+			
+			{{page.title}}
+			
+			{{#if page.actions.next}}
+				<div class="navbar-right">
+					<a href="{{pathFor 'pageTwo'}}" class="navigate-right">{{page.actions.next.text}}</a>
+				</div>
+			{{/if}}
+
+        </div>
+
+</template>
