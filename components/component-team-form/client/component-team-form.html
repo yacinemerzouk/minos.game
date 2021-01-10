@@ -1,0 +1,27 @@
+<template name="componentTeamForm">
+
+    {{#if subsAndDataReady}}
+
+        <div id="component-team-form" class="component-team-form" hook="component-team-form">
+
+			<form hook="team-form">
+
+				<label>Team name</label>
+				<input type="text" name="teamName" placeholder="Team Name">
+
+				<label>Team Color</label>
+				<input type="color" name="teamColor" value="#660000">
+				
+				<button type="submit">Save</button>
+
+			</form>
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>

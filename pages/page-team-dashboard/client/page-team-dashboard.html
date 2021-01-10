@@ -1,0 +1,53 @@
+<template name="pageTeamDashboard">
+
+	<main class="content">
+	
+		<div class="page page-team-dashboard">
+			
+			<section class="record">
+				<div class="wins">
+					<small>Wins</small>
+					<big>0</big>
+				</div>
+				<div class="losses">
+					<small>Losses</small>
+					<big>0</big>
+				</div>
+				<div class="draws">
+					<small>Draws</small>
+					<big>0</big>
+				</div>
+			</section>
+		
+			<ul>
+				<li>
+					<a href="{{pathFor 'pageTeamManager' teamId=this.teamId}}" class="navigate-right">
+						Manager
+						<span class="right-caret">&#10095;</span>
+					</a>
+				</li>
+				<li>
+					<a href="{{pathFor 'pageTeamPlayers' teamId=this.teamId}}" class="navigate-right">
+						Players
+						<span class="right-caret">&#10095;</span>
+					</a>
+				</li>
+				<li>
+					<a href="{{pathFor 'pageTeamCoaches' teamId=this.teamId}}" class="navigate-right">
+						Coaches
+						<span class="right-caret">&#10095;</span>
+					</a>
+				</li>
+				<li>
+					<a href="{{pathFor 'pageTeamScouts' teamId=this.teamId}}" class="navigate-right">
+						Scouts
+						<span class="right-caret">&#10095;</span>
+					</a>
+				</li>
+			</ul>
+	
+		</div>
+	
+	</main>
+
+</template>

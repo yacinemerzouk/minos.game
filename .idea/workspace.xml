@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="22e11418-b0e1-40b2-9c13-0cef173ef954" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/global.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/global.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/iron-transitions/iron-transitions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/iron-transitions/iron-transitions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page-home/client/page-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-home/client/page-home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page-home/route-home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page-two/client/page-two.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page-two/route-two.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1mqutF0B3tJD6ZJHzAEdqIjfvgy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="enabled" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.meteor.library.cached" value="$PROJECT_DIR$/.meteor&#10;/Users/wopr/Sites/minos.game/packages/momentum/example/.meteor" />
+    <property name="js.meteor.library.was.enabled" value="true" />
+    <property name="js.meteor.project" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22e11418-b0e1-40b2-9c13-0cef173ef954" name="Default Changelist" comment="" />
+      <created>1610233654880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610233654880</updated>
+      <workItem from="1610233656051" duration="5045000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="229" y="98" key="SettingsEditor" timestamp="1610233720165">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="229" y="98" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1610233720165" />
+  </component>
+</project>

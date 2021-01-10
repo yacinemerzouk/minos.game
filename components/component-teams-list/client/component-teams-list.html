@@ -1,0 +1,34 @@
+<template name="componentTeamsList">
+
+    {{#if subsAndDataReady}}
+
+        <div id="component-teams-list" class="component-teams-list" hook="component-teams-list">
+			
+			{{#if teams}}
+				<ul>
+					{{#each team in teams}}
+						<li>
+							<a href="{{pathFor 'pageTeamDashboard' teamId=team._id}}" class="navigate-right">
+								<h6 class="team-name">{{team.teamName}}</h6>
+								<span class="record">WINS: {{team.wins}} &nbsp;&bull;&nbsp; LOSSES: {{team.losses}} &nbsp;&bull;&nbsp; DRAWS: {{team.draws}}</span>
+								<span class="navigate-right">&#10095;</span>
+							</a>
+						</li>
+					{{/each}}
+				</ul>
+			{{else}}
+				<div class="no-team">
+					<h3>You don't have a team yet.</h3>
+					<a href="{{pathFor 'pageTeamNew'}}" class="button">New Team</a>
+				</div>
+			{{/if}}
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>

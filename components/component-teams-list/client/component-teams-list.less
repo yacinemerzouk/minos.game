@@ -1,0 +1,50 @@
+.component-teams-list{
+
+	ul {
+		border: 1px solid #DDD;
+		border-radius: 3px;
+		margin: 10px;
+		list-style: none;
+		border-collapse: collapse;
+		li {
+			border-bottom: 1px solid #DDD;
+			position: relative;
+			a {
+				padding: 13px 30px 15px 15px;
+				text-decoration: none;
+				color: #333;
+				display: block;
+				h6 {
+					color: #333;
+					font-size: 15px;
+				}
+				span.record {
+					display: block;
+					color: #666;
+					font-size: 11px;
+					line-height: 12px;
+					font-weight: bold;
+				}
+				span.navigate-right {
+					position: absolute;
+					right: 12px;
+					top: 50%;
+					font-size: 24px;
+					color: #E6E6E6;
+					transform: translateY(-50%);
+				}
+			}
+			
+		}
+		li:last-child {
+			border-bottom: none;
+		}
+	
+	}
+	
+	.no-team {
+		text-align: center;
+		padding: 20px 10px;
+	}
+
+}

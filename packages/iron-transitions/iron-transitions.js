@@ -21,6 +21,9 @@ IronTransitions.clearHistory = function() {
 // Add the following to your Meteor app:
 // Template.myLayoutTemplateName.events(IronTransitions.events);
 IronTransitions.events = {
+	'submit form': function ( evt ) {
+		IronTransitions.transition = 'iron-transition-fade';
+	},
     'click a': function ( evt ) {
         IronTransitions.transition = 'iron-transition-fade';
     },

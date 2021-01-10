@@ -1,10 +1,12 @@
 <template name="pageHome">
 	
 	<main class="content">
+		
+		<div class="page page-team-home">
 	    
-		<h1>Home</h1>
-	    
-	    <a href="{{pathFor 'pageTwo'}}" class="navigate-right">Page 2</a>
+			{{>componentTeamsList page=this}}
+			
+		</div>
 	
 	</main>
 
