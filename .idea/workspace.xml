@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22e11418-b0e1-40b2-9c13-0cef173ef954" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/global.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/global.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/iron-transitions/iron-transitions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/iron-transitions/iron-transitions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-home/client/page-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-home/client/page-home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-home/route-home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-two/client/page-two.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-two/route-two.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/api/players/player-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/players/player-model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/api/players/players-collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/players/players-collection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page-team-hire-player/client/page-team-hire-player.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-hire-player/client/page-team-hire-player.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page-team-hire-player/page-team-hire-player.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-hire-player/page-team-hire-player.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +52,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610233654880</updated>
-      <workItem from="1610233656051" duration="5045000" />
+      <workItem from="1610233656051" duration="7921000" />
+      <workItem from="1610426479979" duration="4148000" />
     </task>
     <servers />
   </component>
@@ -70,5 +65,9 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="229" y="98" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1610233720165" />
+    <state x="2579" y="185" width="602" height="490" key="find.popup" timestamp="1610430346328">
+      <screen x="1920" y="-97" width="1920" height="1055" />
+    </state>
+    <state x="2579" y="185" width="602" height="490" key="find.popup/3840.226.1440.875/0.25.1920.1055/1920.-97.1920.1055@1920.-97.1920.1055" timestamp="1610430346328" />
   </component>
 </project>

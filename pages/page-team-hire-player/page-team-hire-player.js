@@ -7,8 +7,11 @@ Router.route(
 		name: 'pageTeamHirePlayer',
 		
 		// Page Data
-		data: {
-			title: 'Hire Player',
+		data: function() {
+			return {
+				title: 'Hire Player',
+				teamId: this.params.teamId
+			}
 		}
 
 	},

@@ -1,0 +1,131 @@
+<template name="componentPlayerCard">
+
+    {{#if subsAndDataReady}}
+
+        <div id="component-player-card" class="component-player-card" hook="component-player-card">
+
+            <player>
+
+                <overview>
+                    <info>
+                        <name>
+                        {{player.firstName}} {{player.lastName}}
+                        </name>
+                        <position>
+                            {{player.position}}
+                        </position>
+                    </info>
+
+                    <overall>
+                        {{playerRating player=player}}
+                    </overall>
+                </overview>
+
+                <stats>
+                    <stat>
+                        STR
+                        <rating>{{player.strength}}</rating>
+                    </stat>
+                    <stat>
+                        DEX
+                        <rating>{{player.dexterity}}</rating>
+                    </stat>
+                    <stat>
+                        FOR
+                        <rating>{{player.fortitude}}</rating>
+                    </stat>
+                    <stat>
+                        ANT
+                        <rating>{{player.anticipation}}</rating>
+                    </stat>
+                    <stat>
+                        QUI
+                        <rating>{{player.quickness}}</rating>
+                    </stat>
+                    <stat>
+                        THR
+                        <rating>{{player.throwing}}</rating>
+                    </stat>
+                    <stat>
+                        CAT
+                        <rating>{{player.catching}}</rating>
+                    </stat>
+                    <stat>
+                        EVA
+                        <rating>{{player.evade}}</rating>
+                    </stat>
+                    <stat>
+                        GOR
+                        <rating>{{player.gore}}</rating>
+                    </stat>
+                    <stat>
+                        MAZ
+                        <rating>{{player.maze}}</rating>
+                    </stat>
+                </stats>
+
+                <report>
+                    <looks>
+                        Scouting: None
+                    </looks>
+                    <more>
+                        View&nbsp;Details
+                    </more>
+                </report>
+
+            </player>
+
+<!--            <table style="width: 100%; text-align: center" border="1" cellspacing="0">-->
+<!--                <thead>-->
+<!--                <tr>-->
+<!--                    <th colspan="9">{{player.firstName}} {{player.lastName}}</th>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <th colspan="9" style="text-transform: capitalize">{{player.position}}</th>-->
+<!--                </tr>-->
+
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                <tr>-->
+<!--                    <th colspan="4">PLAYER RATING</th>-->
+<!--                    <th width="1">STR</th>-->
+<!--                    <th width="1">DEX</th>-->
+<!--                    <th width="1">FOR</th>-->
+<!--                    <th width="1">ANT</th>-->
+<!--                    <th width="1">QUI</th>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td colspan="4" rowspan="3" style="font-size: 40px; font-weight: bold">{{playerRating player=player}}</td>-->
+<!--                    <td>{{player.strength}}</td>-->
+<!--                    <td>{{player.dexterity}}</td>-->
+<!--                    <td>{{player.fortitude}}</td>-->
+<!--                    <td>{{player.anticipation}}</td>-->
+<!--                    <td>{{player.quickness}}</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+
+<!--                    <th>THR</th>-->
+<!--                    <th>CAT</th>-->
+<!--                    <th>EVA</th>-->
+<!--                    <th>GOR</th>-->
+<!--                    <th>MAZ</th>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td>{{player.throwing}}</td>-->
+<!--                    <td>{{player.catching}}</td>-->
+<!--                    <td>{{player.evade}}</td>-->
+<!--                    <td>{{player.gore}}</td>-->
+<!--                    <td>{{player.maze}}</td>-->
+<!--                </tr>-->
+<!--                </tbody>-->
+<!--            </table>-->
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>

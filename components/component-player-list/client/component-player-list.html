@@ -1,0 +1,19 @@
+<template name="componentPlayerList">
+
+    {{#if subsAndDataReady}}
+
+        <div id="component-player-list" class="component-player-list" hook="component-player-list">
+
+            {{#each player in players}}
+                {{> componentPlayerCard player=player}}
+            {{/each}}
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>
