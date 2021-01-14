@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="22e11418-b0e1-40b2-9c13-0cef173ef954" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api/players/player-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/players/player-model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api/players/players-collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/players/players-collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-hire-player/client/page-team-hire-player.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-hire-player/client/page-team-hire-player.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/page-team-hire-player/page-team-hire-player.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-hire-player/page-team-hire-player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/private/bash/create-component" beforeDir="false" afterPath="$PROJECT_DIR$/private/bash/create-component" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/private/bash/create-page" beforeDir="false" afterPath="$PROJECT_DIR$/private/bash/create-page" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/private/component-template/component.html.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/private/component-template/component.html.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/private/page-template/page.html.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/private/page-template/page.html.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/private/page-template/page.js.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/private/page-template/page.js.tmpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,8 @@
       <option name="presentableId" value="Default" />
       <updated>1610233654880</updated>
       <workItem from="1610233656051" duration="7921000" />
-      <workItem from="1610426479979" duration="4148000" />
+      <workItem from="1610426479979" duration="4835000" />
+      <workItem from="1610495356814" duration="4466000" />
     </task>
     <servers />
   </component>

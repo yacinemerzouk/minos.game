@@ -1,16 +1,27 @@
 #!/usr/bin/env bash
 FILENAME=${1?Error: no filename given}
+PAGENAME=${2?Error: no component name given}
 echo "==========================================================="
 echo "Creating page $FILENAME ..."
 echo "==========================================================="
-mkdir ./pages/page-$FILENAME
-mkdir ./pages/page-$FILENAME/client
-mkdir ./pages/page-$FILENAME/server
-cp ./private/page-template/page.html.tmpl ./pages/page-$FILENAME/client/page-$FILENAME.html
-cp ./private/page-template/page.less.tmpl ./pages/page-$FILENAME/client/page-$FILENAME.less
-cp ./private/page-template/page-publications.js ./pages/page-$FILENAME/server/page-publications.js
-cp ./private/page-template/page.js.tmpl ./pages/page-$FILENAME/page-$FILENAME.js
-echo "PAGE CREATED! Don't forget to search-and-replace:"
-echo "Replace FILE_NAME_GOES_HERE with file name"
-echo "Replace TEMPLATE_NAME_GOES_HERE with camel-cased filename"
+mkdir ./pages/$FILENAME
+mkdir ./pages/$FILENAME/client
+mkdir ./pages/$FILENAME/server
+cp ./private/page-template/page.html.tmpl ./pages/$FILENAME/client/$FILENAME.html
+sed -i'.original' "s/TEMPLATE_NAME_GOES_HERE/$PAGENAME/g" ./pages/$FILENAME/client/$FILENAME.html
+rm ./pages/$FILENAME/client/$FILENAME.html.original
+sed -i'.original' "s/FILE_NAME_GOES_HERE/$FILENAME/g" ./pages/$FILENAME/client/$FILENAME.html
+rm ./pages/$FILENAME/client/$FILENAME.html.original
+cp ./private/page-template/page.less.tmpl ./pages/$FILENAME/client/$FILENAME.less
+sed -i'.original' "s/FILE_NAME_GOES_HERE/$FILENAME/g" ./pages/$FILENAME/client/$FILENAME.less
+rm ./pages/$FILENAME/client/$FILENAME.less.original
+cp ./private/page-template/page-publications.js ./pages/$FILENAME/server/page-publications.js
+sed -i'.original' "s/TEMPLATE_NAME_GOES_HERE/$PAGENAME/g" ./pages/$FILENAME/server/page-publications.js
+rm ./pages/$FILENAME/server/page-publications.js.original
+cp ./private/page-template/page.js.tmpl ./pages/$FILENAME/$FILENAME.js
+sed -i'.original' "s/TEMPLATE_NAME_GOES_HERE/$PAGENAME/g" ./pages/$FILENAME/$FILENAME.js
+rm ./pages/$FILENAME/$FILENAME.js.original
+echo "PAGE CREATED!"
+echo "IMPORTANT: Don't forget to change the the path in ./pages/$FILENAME/$FILENAME.js"
+echo "IMPORTANT: Don't forget to change the the page title in ./pages/$FILENAME/$FILENAME.js"
 echo "==========================================================="

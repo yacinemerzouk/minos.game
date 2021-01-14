@@ -9,7 +9,7 @@ Router.route(
 		// Page Data
 		data: function() {
 			return {
-				title: 'Hire Player',
+				title: 'Free Agent Players',
 				teamId: this.params.teamId
 			}
 		}
