@@ -1,0 +1,19 @@
+<template name="componentPlayerListPagination">
+
+    {{#if subsAndDataReady}}
+
+        <div class="component-player-list-pagination" hook="component-player-list-pagination">
+
+            Showing 1-10 of 100 players
+
+            <button class="pagination-link next">NEXT</button><button class="pagination-link prev">PREV</button>
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>

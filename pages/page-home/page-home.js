@@ -14,12 +14,14 @@ Router.route(
         name: 'pageHome',
 		
 		// Page Data
-		data: {
-			title: 'My Teams',
-			actions: {
-				next: {
-					text: 'New Team',
-					page: 'pageTeamNew'
+		data() {
+        	return {
+				title: 'My Teams',
+				actions: {
+					next: {
+						text: 'New Team',
+						link: Router.path('pageTeamNew')
+					}
 				}
 			}
 		}

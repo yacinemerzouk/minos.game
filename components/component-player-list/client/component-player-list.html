@@ -5,9 +5,10 @@
         <div id="component-player-list" class="component-player-list" hook="component-player-list">
 
             {{#each player in players}}
-                {{> componentPlayerCard player=player}}
+                {{> componentPlayerCard page=page player=player linkToPlayerPage=true}}
             {{/each}}
 
+            {{>componentPlayerListPagination}}
         </div>
 
     {{else}}

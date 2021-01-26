@@ -1,0 +1,15 @@
+<template name="pagePlayerDetails">
+
+	<main class="content">
+	
+		<div class="page page-player-details" hook="page-player-details">
+
+            {{> componentPlayerCard page=this player=player linkToPlayerPage=false}}
+
+            {{> componentPlayerActions page=this player=player team=team}}
+
+		</div>
+	
+	</main>
+
+</template>

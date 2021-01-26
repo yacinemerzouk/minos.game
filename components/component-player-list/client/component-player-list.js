@@ -83,7 +83,7 @@ Template.componentPlayerList.helpers({
 
     players() {
 
-        const players = Players.find({ teamId: { $exists: false } });
+        const players = Players.find({ teamId: { $exists: false } }, { limit: 10 });
         return players;
 
     }

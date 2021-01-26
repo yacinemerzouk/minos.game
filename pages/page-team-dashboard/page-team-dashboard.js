@@ -15,9 +15,15 @@ Router.route(
 		
 		// Page Data
 		data: function() {
-			
+
+			const title = 'Team Dashboard';
 			const team = new Team({ teamId: this.params.teamId });
-			return { title: team.teamName, teamId: team._id };
+			const actions = {
+				previous: {
+					link: Router.path('pageHome')
+				}
+			}
+			return { title, team, actions };
 			
 		}
 

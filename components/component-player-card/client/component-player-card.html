@@ -68,9 +68,13 @@
                     <looks>
                         Scouting: None
                     </looks>
-                    <more>
-                        View&nbsp;Details
-                    </more>
+                    {{#if linkToPlayerPage}}
+                        <more>
+                            <a href="{{pathFor 'pagePlayerDetails' teamId=page.team._id playerId=player._id}}">
+                                View&nbsp;Details
+                            </a>
+                        </more>
+                    {{/if}}
                 </report>
 
             </player>

@@ -1,4 +1,0 @@
-Meteor.publish('pageTeamHirePlayer', function() {
-
-
-});

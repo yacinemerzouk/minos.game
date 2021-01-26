@@ -9,7 +9,7 @@
 					{{#each team in teams}}
 						<li>
 							<a href="{{pathFor 'pageTeamDashboard' teamId=team._id}}" class="navigate-right">
-								<h6 class="team-name">{{team.teamName}}</h6>
+								<h6 class="team-name">{{truncate string=team.teamName maxLength=30}}</h6>
 								<span class="record">WINS: {{team.wins}} &nbsp;&bull;&nbsp; LOSSES: {{team.losses}} &nbsp;&bull;&nbsp; DRAWS: {{team.draws}}</span>
 								<span class="navigate-right">&#10095;</span>
 							</a>

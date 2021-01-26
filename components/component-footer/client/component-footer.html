@@ -1,0 +1,45 @@
+<template name="componentFooter">
+
+    {{#if subsAndDataReady}}
+
+        <div class="component-footer" hook="component-footer">
+            {{#if page.team}}
+                <ul>
+                    <li>
+                        <a href="#">
+                            {{truncate string=page.team.teamName maxLength=18}}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="intel-symbol">
+                                &#952;
+                            </span>
+                            <span class="counter intel">
+                                {{page.team.intel}}
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="gold-symbol">
+                                &#164;
+                            </span>
+                            <span class="counter gold">
+                                {{page.team.gold}}
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            {{/if}}
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>

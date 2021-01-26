@@ -3,9 +3,18 @@
 	<main class="content">
 	
 		<div class="page page-team-players">
-		
-			Team players
-	
+
+		    {{#if players}}
+                {{#each player in players}}
+                    {{> componentPlayerCard page=page player=player linkToPlayerPage=true}}
+                {{/each}}
+            {{else}}
+                <empty>
+                    <p>You don't have any players on your roster yet.</p>
+                    <a class="button navigate-right" href="{{pathFor 'pageTeamHirePlayer' teamId=team._id}}">Hire Players</a>
+                </empty>
+            {{/if}}
+
 		</div>
 	
 	</main>
