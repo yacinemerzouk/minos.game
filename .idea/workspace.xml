@@ -2,33 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22e11418-b0e1-40b2-9c13-0cef173ef954" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/page-team-hire-player/server/page-team-hire-players-publications.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/global.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/global.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-card/client/component-player-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-card/client/component-player-card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-card/client/component-player-card.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-card/client/component-player-card.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-list/client/component-player-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-list/client/component-player-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-list/client/component-player-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-list/client/component-player-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-list/client/component-player-list.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-list/client/component-player-list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-team-form/client/component-team-form.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-form/client/component-team-form.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-teams-list/client/component-teams-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-teams-list/client/component-teams-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-footer/client/component-footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-footer/client/component-team-footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-footer/client/component-footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-footer/client/component-team-footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-footer/client/component-footer.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-footer/client/component-team-footer.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-footer/server/component-footer-methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-footer/server/component-team-footer-methods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-footer/server/component-footer-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-footer/server/component-team-footer-publications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-teams-list/client/component-teams-list.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-teams-list/client/component-teams-list.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/api/teams/team-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/teams/team-model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/api/teams/teams-collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/teams/teams-collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-home/page-home.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-home/page-home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/page-team-dashboard/client/page-team-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-dashboard/client/page-team-dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/page-team-dashboard/client/page-team-dashboard.less" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-dashboard/client/page-team-dashboard.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/page-team-dashboard/page-team-dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-dashboard/page-team-dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/page-team-dashboard/server/page-team-dashboard-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-dashboard/server/page-team-dashboard-publications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-hire-player/client/page-team-hire-player.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-hire-player/client/page-team-hire-player.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-hire-player/page-team-hire-player.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-hire-player/page-team-hire-player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-hire-player/server/page-publications.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-players/client/page-team-players.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-players/client/page-team-players.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-players/client/page-team-players.less" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-players/client/page-team-players.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-players/page-team-players.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-players/page-team-players.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-players/server/page-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-players/server/page-publications.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +41,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="enabled" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js.meteor.library.cached" value="$PROJECT_DIR$/.meteor&#10;/Users/wopr/Sites/minos.game/packages/momentum/example/.meteor" />
+    <property name="js.meteor.library.cached" value="$PROJECT_DIR$/packages/momentum/example/.meteor&#10;/Users/wopr/Sites/minos.game/.meteor" />
     <property name="js.meteor.library.was.enabled" value="true" />
     <property name="js.meteor.project" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -82,7 +73,11 @@
       <workItem from="1611214286862" duration="356000" />
       <workItem from="1611343257657" duration="391000" />
       <workItem from="1611430635942" duration="810000" />
-      <workItem from="1611632756929" duration="4424000" />
+      <workItem from="1611632756929" duration="4474000" />
+      <workItem from="1611688465492" duration="591000" />
+      <workItem from="1611730020185" duration="38000" />
+      <workItem from="1611735446016" duration="5461000" />
+      <workItem from="1611807075998" duration="2719000" />
     </task>
     <servers />
   </component>
@@ -94,9 +89,10 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="229" y="98" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1610233720165" />
-    <state x="2579" y="185" width="602" height="548" key="find.popup" timestamp="1611635719910">
-      <screen x="1920" y="-97" width="1920" height="1055" />
+    <state x="494" y="259" width="567" height="548" key="find.popup" timestamp="1611740641139">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
+    <state x="494" y="259" width="567" height="548" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1611740641139" />
     <state x="2579" y="185" width="602" height="548" key="find.popup/3840.226.1440.875/0.25.1920.1055/1920.-97.1920.1055@1920.-97.1920.1055" timestamp="1611635719910" />
   </component>
 </project>

@@ -1,0 +1,42 @@
+<template name="componentTeamMenu">
+
+    {{#if subsAndDataReady}}
+
+        <div class="component-team-menu" hook="component-team-menu">
+
+            <ul class="team-menu">
+                <!--				<li>-->
+                <!--					<a href="{{pathFor 'pageTeamManager' teamId=team._id}}" class="navigate-right">-->
+                <!--						Manager-->
+                <!--						<span class="right-caret">&#10095;</span>-->
+                <!--					</a>-->
+                <!--				</li>-->
+                <li>
+                    <a href="{{pathFor 'pageTeamPlayers' teamId=teamId}}" class="navigate-right">
+                        {{nbPlayers}} Players
+                        <span class="right-caret">&#10095;</span>
+                    </a>
+                </li>
+                <!--				<li>-->
+                <!--					<a href="{{pathFor 'pageTeamCoaches' teamId=team._id}}" class="navigate-right">-->
+                <!--						Coaches-->
+                <!--						<span class="right-caret">&#10095;</span>-->
+                <!--					</a>-->
+                <!--				</li>-->
+                <!--				<li>-->
+                <!--					<a href="{{pathFor 'pageTeamScouts' teamId=team._id}}" class="navigate-right">-->
+                <!--						Scouts-->
+                <!--						<span class="right-caret">&#10095;</span>-->
+                <!--					</a>-->
+                <!--				</li>-->
+            </ul>
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>

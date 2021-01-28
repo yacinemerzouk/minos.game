@@ -1,0 +1,35 @@
+<template name="componentPlayButton">
+
+    {{#if subsAndDataReady}}
+
+        <div class="component-play-button" hook="component-play-button">
+
+            {{#if canEnterTheArena}}
+                <arena-button class="enabled" hook="play">
+                    Enter
+                    The
+                    Arena
+                </arena-button>
+            {{else}}
+                <arena-button class="disabled">
+                    You must have at least 6
+                    players to enter the arena
+                </arena-button>
+            {{/if}}
+
+            <intersticial hook="match-starting">
+                <img src="/images/minos-team-crest.png"><br>
+                <br>
+                Entering the arena...<br>
+                Waiting for opponent...
+            </intersticial>
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>

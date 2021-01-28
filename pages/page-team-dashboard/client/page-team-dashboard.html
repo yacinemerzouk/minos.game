@@ -3,48 +3,14 @@
 	<main class="content">
 	
 		<div class="page page-team-dashboard">
+
+            {{> componentPlayButton teamId=this.params.teamId}}
 			
-			<section class="record">
-				<div class="wins">
-					<small>Wins</small>
-					<big>{{team.wins}}</big>
-				</div>
-				<div class="losses">
-					<small>Losses</small>
-					<big>{{team.losses}}</big>
-				</div>
-				<div class="draws">
-					<small>Draws</small>
-					<big>{{team.draws}}</big>
-				</div>
-			</section>
+            {{> componentTeamRecord teamId=this.params.teamId}}
 		
-			<ul>
-<!--				<li>-->
-<!--					<a href="{{pathFor 'pageTeamManager' teamId=team._id}}" class="navigate-right">-->
-<!--						Manager-->
-<!--						<span class="right-caret">&#10095;</span>-->
-<!--					</a>-->
-<!--				</li>-->
-				<li>
-					<a href="{{pathFor 'pageTeamPlayers' teamId=team._id}}" class="navigate-right">
-						Players
-						<span class="right-caret">&#10095;</span>
-					</a>
-				</li>
-<!--				<li>-->
-<!--					<a href="{{pathFor 'pageTeamCoaches' teamId=team._id}}" class="navigate-right">-->
-<!--						Coaches-->
-<!--						<span class="right-caret">&#10095;</span>-->
-<!--					</a>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a href="{{pathFor 'pageTeamScouts' teamId=team._id}}" class="navigate-right">-->
-<!--						Scouts-->
-<!--						<span class="right-caret">&#10095;</span>-->
-<!--					</a>-->
-<!--				</li>-->
-			</ul>
+			{{> componentTeamMenu teamId=this.params.teamId}}
+
+            {{> componentTeamFooter teamId=this.params.teamId}}
 	
 		</div>
 	

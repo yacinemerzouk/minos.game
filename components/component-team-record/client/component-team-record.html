@@ -1,0 +1,30 @@
+<template name="componentTeamRecord">
+
+    {{#if subsAndDataReady}}
+
+        <div class="component-team-record" hook="component-team-record">
+
+            <section class="record">
+                <div class="wins">
+                    <small>Wins</small>
+                    <big>{{team.wins}}</big>
+                </div>
+                <div class="losses">
+                    <small>Losses</small>
+                    <big>{{team.losses}}</big>
+                </div>
+                <div class="draws">
+                    <small>Draws</small>
+                    <big>{{team.draws}}</big>
+                </div>
+            </section>
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>
