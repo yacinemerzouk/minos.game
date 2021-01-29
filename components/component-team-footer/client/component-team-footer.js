@@ -84,7 +84,6 @@ Template.componentTeamFooter.helpers({
     team() {
 
         const team = Teams.findOne({ _id: this.teamId });
-        console.log(team);
         return team;
 
     }

@@ -1,5 +1,20 @@
 import { Template } from "meteor/templating";
 
+
+// ===================================================
+// HELPER: eq
+// Checks for equality between 2 provided variables
+// @arg Mixed: value1
+// @arg Mixed: value2
+// @return Boolean: whether the 2 values are equal or not
+// ===================================================
+UI.registerHelper('eq', function(value1, value2) {
+
+    // Do it
+    return value1 === value2;
+
+});
+
 // ===================================================
 // HELPER: playerRating
 // ===================================================

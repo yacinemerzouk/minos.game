@@ -1,0 +1,61 @@
+<template name="pageMatchResults">
+
+	<main class="content">
+	
+		<div class="page page-match-results" hook="page-match-results">
+		
+
+                {{#if eq params.teamId match.winner}}
+                <match-result class="win">
+                    You won!
+                </match-result>
+                {{else}}
+                    {{#if eq match.winner 'draw'}}
+                        <match-result class="draw">
+                        You drew.
+                        </match-result>
+                    {{else}}
+                        <match-result class="loss">
+                            You lost.
+                        </match-result>
+                   {{/if}}
+                {{/if}}
+
+
+            <match-score>
+                <team class="white">
+                    <team-name>
+                        {{whiteTeam.teamName}}
+                        <team-score>
+                            {{match.whiteTeamScore}}
+                        </team-score>
+                    </team-name>
+                    <team-logo style="background: {{whiteTeam.teamColor}}">
+                        <img src="/images/minos-team-crest.png">
+
+                    </team-logo>
+
+
+                </team>
+
+                <team class="black">
+                    <team-logo style="background: {{blackTeam.teamColor}}">
+                        <img src="/images/minos-team-crest.png">
+
+                    </team-logo>
+
+
+                    <team-name>
+                        {{blackTeam.teamName}}
+                        <team-score>
+                            {{match.blackTeamScore}}
+                        </team-score>
+                    </team-name>
+                </team>
+            </match-score>
+
+		</div>
+	
+	</main>
+
+</template>

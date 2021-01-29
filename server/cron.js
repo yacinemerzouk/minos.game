@@ -6,24 +6,47 @@ SyncedCron.add({
     },
     job: function() {
 
+        console.log('In arena queue...');
+
         // Get all teams owned by players in arena queue
-        const teamsInQueue = Teams.find({ playerId: { $exists: true } }).fetch();
+        const teamsInQueue = Teams.find({ inArenaQueue: true, userId: { $exists: true } }).fetch();
 
         // If number of teams in queue is not even, add a cpu team to the array
         if ( teamsInQueue.length % 2 === 1) {
 
-            const extraTeam = Teams.findOne({ playerId: { $exists: false } });
+            const extraTeam = Teams.findOne({ userId: { $exists: false } });
             teamsInQueue.push(extraTeam);
 
         }
 
-        // Create match
-        // Add one team to the match
-        //     and remove it from the array
-        //     and unset inArenaQueue
-        // Add the second team and remove it from the array
-        //     and remove it from the array
-        //     and unset inArenaQueue
+        console.log(`Got ${teamsInQueue.length} teams in the queue...`);
+
+        for (let x = 0; x < teamsInQueue.length; x = x + 2) {
+
+            console.log('Creating matches...');
+
+            // Create match for 2 team
+            const whiteTeam = new Team({ teamId: teamsInQueue[x]._id });
+            console.log(`White team: ${whiteTeam._id}`);
+            const blackTeam = new Team({ teamId: teamsInQueue[x+1]._id });
+            console.log(`Black team: ${blackTeam._id}`);
+            const minosMatch = new MinosMatch();
+            minosMatch.whiteTeamId = whiteTeam._id;
+            minosMatch.blackTeamId = blackTeam._id;
+            minosMatch.save();
+
+            // Remove teams from queue
+            whiteTeam.inArenaQueue = false;
+            whiteTeam.currentMatch = minosMatch._id;
+            whiteTeam.save();
+            blackTeam.inArenaQueue = false;
+            blackTeam.currentMatch = minosMatch._id;
+            blackTeam.save();
+
+            // Play!
+            minosMatch.play();
+
+        }
 
 
 

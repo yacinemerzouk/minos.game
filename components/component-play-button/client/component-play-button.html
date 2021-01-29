@@ -17,12 +17,24 @@
                 </arena-button>
             {{/if}}
 
-            <intersticial hook="match-starting">
-                <img src="/images/minos-team-crest.png"><br>
-                <br>
-                Entering the arena...<br>
-                Waiting for opponent...
-            </intersticial>
+            {{#if team.inArenaQueue}}
+                <intersticial>
+                    <img src="/images/minos-team-crest.png"><br>
+                    <br>
+                    Entering the arena...<br>
+                    Waiting for opponent...
+                </intersticial>
+            {{/if}}
+
+            {{#if team.currentMatch}}
+                <intersticial>
+                    <img src="/images/minos-team-crest.png"><br>
+                    <br>
+                    <a href="{{pathFor 'pageMatchResults' matchId=team.currentMatch teamId=teamId}}" class="button">
+                        Play Match
+                    </a>
+                </intersticial>
+            {{/if}}
 
         </div>
 

@@ -1,0 +1,80 @@
+.page-match-results {
+
+	match-result {
+		background: #DDDDDD;
+		border: 3px solid #AAA;
+		color: #000;
+		font-weight: bold;
+		font-size: 20px;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 20px;
+		margin-bottom: 10px;
+		border-radius: 3px;
+	}
+	match-result.win {
+		background: darkgreen;
+		border-color: #1e3737;
+		color: #FFF;
+	}
+	match-result.loss {
+		background: #660000;
+		border-color: #480606;
+		color: #FFF;
+	}
+
+	match-score {
+
+		team {
+			display: block;
+			width: 100%;
+			clear: both;
+			padding-bottom: 10px;
+			position: relative;
+		}
+
+		team-logo {
+			padding: 10px;
+			width: 50%;
+			display: inline-block;
+			border-radius: 3px;
+			text-align: center;
+			img{
+				width: 120px;
+			}
+
+		}
+
+		team-name {
+			color: #999;
+			font-size: 14px;
+			line-height: 14px;
+			font-weight: bold;
+			display: block;
+			position: absolute;
+			top: 42%;
+			right: 0;
+			width: 50%;
+			text-align: center;
+			padding: 10px;
+			transform: translateY(-50%);
+
+			team-score {
+
+				font-size: 75px;
+				line-height: 75px;
+				font-weight: bold;
+				display: block;
+				text-align: center;
+				color: #000;
+				padding-top: 10px;
+			}
+
+		}
+
+
+
+	}
+
+}

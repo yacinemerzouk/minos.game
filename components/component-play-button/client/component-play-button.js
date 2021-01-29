@@ -76,10 +76,10 @@ Template.componentPlayButton.events({
      */
     'click [hook="play"]': (event, templateInstance) => {
 
+        console.log('Click play!');
+
         // Prevent default event behavior
         event.preventDefault();
-
-        $('[hook="match-starting"]').show();
 
         // Mark team as queued
         const team = new Team({ teamId: templateInstance.data.teamId });
@@ -108,6 +108,28 @@ Template.componentPlayButton.helpers({
 
         return Players.find({ teamId: this.teamId }).count() >= 6;
 
-    }
+    },
+
+    team() {
+
+        return new Team({ teamId: this.teamId });
+
+    },
+
+    inArenaQueue() {
+
+        const team = new Team({ teamId: this.teamId });
+        console.log('Team in arena queue?', team.inArenaQueue);
+
+        return team.inArenaQueue;
+
+    },
+
+    // hasNewResults() {
+    //
+    //     const team = new Team({ teamId: this.teamId });
+    //     return team.hasNewResults;
+    //
+    // }
 
 });
