@@ -1,0 +1,21 @@
+<template name="componentManagerList">
+
+    {{#if subsAndDataReady}}
+
+        <div class="component-manager-list" hook="component-manager-list">
+
+            {{#each manager in managers}}
+                {{> componentManagerCard page=page managerObject=manager linkToManagerPage=true}}
+            {{/each}}
+
+<!--            {{>componentPlayerListPagination}}-->
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>

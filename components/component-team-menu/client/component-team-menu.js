@@ -15,9 +15,6 @@ Template.componentTeamMenu.onCreated(function() {
     // AUTORUN
     this.autorun(() => {
 
-        // Keep tabs on autoruns until performance problems are solved
-        Log.warn('Autorun: componentTeamMenu');
-
         // Reactive var to re-run subs
         // Remove this and get this sub outside of autorun if
         // the autorun is not needed.
@@ -32,9 +29,6 @@ Template.componentTeamMenu.onCreated(function() {
 
                     // Update reactive var
                     this.subsReady.set(true);
-
-                    // Log performance
-                    Log.warn(`[SUB] componentTeamMenu: ${new Date().getTime() - this.subsStartTimestamp}ms`);
 
                 },
             },
@@ -86,6 +80,13 @@ Template.componentTeamMenu.helpers({
         const team = new Team({ teamId: this.teamId });
         return team.nbPlayers();
 
-    }
+    },
+
+    nbManagers() {
+
+        const team = new Team({ teamId: this.teamId });
+        return team.nbManagers();
+
+    },
 
 });

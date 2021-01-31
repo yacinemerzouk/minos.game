@@ -1,0 +1,15 @@
+<template name="pageManagerDetails">
+
+	<main class="content">
+	
+		<div class="page page-manager-details" hook="page-manager-details">
+
+            {{> componentManagerCard page=this managerId=this.params.managerId linkToManagerPage=false}}
+
+            {{> componentManagerActions page=this managerId=this.params.managerId teamId=this.params.teamId}}
+
+        </div>
+	
+	</main>
+
+</template>

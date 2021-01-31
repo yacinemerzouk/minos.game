@@ -27,6 +27,17 @@ Template.registerHelper('playerRating', function(data) {
 });
 
 // ===================================================
+// HELPER: managerRating
+// ===================================================
+Template.registerHelper('managerRating', function(data) {
+
+    const manager = new Manager();
+    manager.populate({ managerData: data.hash.manager });
+    return manager.rating();
+
+});
+
+// ===================================================
 // HELPER: truncate
 // Truncate a string
 // @arg Object: { string, maxLength }

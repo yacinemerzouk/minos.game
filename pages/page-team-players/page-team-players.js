@@ -13,9 +13,9 @@ Router.route(
 		// Page Data
 		data: function() {
 			const team = new Team({ teamId: this.params.teamId });
-			console.log(`This team has ${team.players().length} players`);
+			// console.log(`This team has ${team.players().length} players`);
 			return {
-				title: 'Players',
+				title: 'My Players',
 				players: team.players(),
 				team,
 				actions: {

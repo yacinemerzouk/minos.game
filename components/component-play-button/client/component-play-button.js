@@ -76,8 +76,6 @@ Template.componentPlayButton.events({
      */
     'click [hook="play"]': (event, templateInstance) => {
 
-        console.log('Click play!');
-
         // Prevent default event behavior
         event.preventDefault();
 
@@ -104,9 +102,16 @@ Template.componentPlayButton.helpers({
 
     },
 
-    canEnterTheArena() {
+    hasManager() {
 
-        return Players.find({ teamId: this.teamId }).count() >= 6;
+        const team = new Team({ teamId: this.teamId });
+        return team.nbManagers() >= 1;
+    },
+
+    hasEnoughPlayers() {
+
+        const team = new Team({ teamId: this.teamId });
+        return team.nbPlayers() >= 6;
 
     },
 
@@ -115,21 +120,5 @@ Template.componentPlayButton.helpers({
         return new Team({ teamId: this.teamId });
 
     },
-
-    inArenaQueue() {
-
-        const team = new Team({ teamId: this.teamId });
-        console.log('Team in arena queue?', team.inArenaQueue);
-
-        return team.inArenaQueue;
-
-    },
-
-    // hasNewResults() {
-    //
-    //     const team = new Team({ teamId: this.teamId });
-    //     return team.hasNewResults;
-    //
-    // }
 
 });

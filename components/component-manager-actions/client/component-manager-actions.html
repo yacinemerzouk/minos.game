@@ -1,0 +1,17 @@
+<template name="componentManagerActions">
+
+    {{#if subsAndDataReady}}
+
+        <div class="component-manager-actions" hook="component-manager-actions">
+
+            <button class="button" hook="hire">Hire This Manager (50 Gold)</button>
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>

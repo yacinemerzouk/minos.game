@@ -3,8 +3,21 @@
 	<main class="content">
 	
 		<div class="page page-team-manager">
-		
-	        <h1>Team Manager</h1>
+
+            {{#if manager}}
+
+                {{> componentManagerCard managerId=manager._id linkToManagerPage=false}}
+
+            {{else}}
+
+                <empty>
+                    <p>You don't have a manager for your team yet.</p>
+                    <a class="button navigate-right" href="{{pathFor 'pageTeamHireManager' teamId=this.params.teamId}}">Hire Manager</a>
+                </empty>
+
+            {{/if}}
+
+            {{> componentTeamFooter teamId=this.params.teamId}}
 	
 		</div>
 	

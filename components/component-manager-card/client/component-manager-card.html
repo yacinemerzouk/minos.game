@@ -1,0 +1,71 @@
+<template name="componentManagerCard">
+
+    {{#if subsAndDataReady}}
+
+        <div class="component-manager-card" hook="component-manager-card">
+
+            <manager>
+
+                <overview>
+                    <info>
+                        <name>
+                            {{manager.firstName}} {{manager.lastName}}
+                        </name>
+                        <position>
+                            Career: {{manager.wins}}W / {{manager.losses}}L / {{manager.draws}}D
+                        </position>
+                    </info>
+
+                    <overall>
+                        {{managerRating manager=manager}}
+                    </overall>
+                </overview>
+
+                <stats>
+                    <stat>
+                        SCO
+                        <rating>{{manager.scouting}}</rating>
+                    </stat>
+                    <stat>
+                        STR
+                        <rating>{{manager.strategy}}</rating>
+                    </stat>
+                    <stat>
+                        TAC
+                        <rating>{{manager.tactics}}</rating>
+                    </stat>
+                    <stat>
+                        MOT
+                        <rating>{{manager.motivation}}</rating>
+                    </stat>
+                    <stat>
+                        TRA
+                        <rating>{{manager.training}}</rating>
+                    </stat>
+
+                </stats>
+
+                <report>
+                    <looks>
+                        Management Style: Unknown
+                    </looks>
+                    {{#if linkToManagerPage}}
+                        <more>
+                            <a href="{{pathFor 'pageManagerDetails' teamId=page.params.teamId managerId=manager._id}}">
+                                View&nbsp;Details
+                            </a>
+                        </more>
+                    {{/if}}
+                </report>
+
+            </manager>
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>

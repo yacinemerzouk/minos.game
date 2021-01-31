@@ -1,4 +1,4 @@
-Meteor.publish('TEMPLATE_NAME_GOES_HERE', function({ teamId }) {
+Meteor.publish('pageTeamManager', function({ teamId }) {
 
     return Managers.find({ teamId });
 

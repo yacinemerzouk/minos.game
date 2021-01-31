@@ -4,16 +4,23 @@
 
         <div class="component-play-button" hook="component-play-button">
 
-            {{#if canEnterTheArena}}
-                <arena-button class="enabled" hook="play">
-                    Enter
-                    The
-                    Arena
-                </arena-button>
+            {{#if hasManager}}
+                {{#if hasEnoughPlayers}}
+                    <arena-button class="enabled" hook="play">
+                        Enter
+                        The
+                        Arena
+                    </arena-button>
+                {{else}}
+                    <arena-button class="disabled">
+                        You must have at least 6
+                        players to enter the arena
+                    </arena-button>
+                {{/if}}
             {{else}}
                 <arena-button class="disabled">
-                    You must have at least 6
-                    players to enter the arena
+                    You must have a manager
+                    to enter the arena
                 </arena-button>
             {{/if}}
 
