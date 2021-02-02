@@ -3,34 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="22e11418-b0e1-40b2-9c13-0cef173ef954" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-play-button/client/component-play-button.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-play-button/client/component-play-button.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-play-button/client/component-play-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-play-button/client/component-play-button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-play-button/server/component-play-button-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-play-button/server/component-play-button-publications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-card/client/component-player-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-card/client/component-player-card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-team-menu/client/component-team-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-menu/client/component-team-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-team-menu/client/component-team-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-menu/client/component-team-menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-team-menu/server/component-team-menu-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-menu/server/component-team-menu-publications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-teams-list/client/component-teams-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-teams-list/client/component-teams-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-teams-list/client/component-teams-list.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-teams-list/client/component-teams-list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api/managers/manager-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/managers/manager-model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api/managers/managers-collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/managers/managers-collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api/players/players-collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/players/players-collection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/api/minos-matches/minos-matches-collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/minos-matches/minos-matches-collection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/api/teams/team-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/teams/team-model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-home/client/page-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-home/client/page-home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-dashboard/page-team-dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-dashboard/page-team-dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-dashboard/server/page-team-dashboard-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-dashboard/server/page-team-dashboard-publications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-hire-manager/client/page-team-hire-manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-hire-manager/client/page-team-hire-manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-hire-manager/page-team-hire-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-hire-manager/page-team-hire-manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-manager/client/page-team-manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-manager/client/page-team-manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-manager/client/page-team-manager.less" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-manager/client/page-team-manager.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-manager/page-team-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-manager/page-team-manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-manager/server/page-team-manager-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-manager/server/page-team-manager-publications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-players/page-team-players.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-players/page-team-players.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/fixtures.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/fixtures.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page-match-results/client/page-match-results.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-match-results/client/page-match-results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page-match-results/client/page-match-results.less" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-match-results/client/page-match-results.less" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +75,8 @@
       <workItem from="1611735446016" duration="5461000" />
       <workItem from="1611807075998" duration="16405000" />
       <workItem from="1611971404119" duration="10587000" />
-      <workItem from="1612072366880" duration="2370000" />
+      <workItem from="1612072366880" duration="7850000" />
+      <workItem from="1612217488771" duration="182000" />
     </task>
     <servers />
   </component>
@@ -111,11 +88,11 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="229" y="98" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1610233720165" />
-    <state x="494" y="259" width="567" height="548" key="find.popup" timestamp="1611994496168">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state x="2579" y="185" width="602" height="582" key="find.popup" timestamp="1612128756608">
+      <screen x="1920" y="-97" width="1920" height="1055" />
     </state>
     <state x="494" y="259" width="567" height="548" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1611994496168" />
-    <state x="2579" y="185" width="602" height="582" key="find.popup/3840.226.1440.875/0.25.1920.1055/1920.-97.1920.1055@1920.-97.1920.1055" timestamp="1611976648536" />
+    <state x="2579" y="185" width="602" height="582" key="find.popup/3840.226.1440.875/0.25.1920.1055/1920.-97.1920.1055@1920.-97.1920.1055" timestamp="1612128756608" />
     <state x="2545" y="137" width="670" height="676" key="search.everywhere.popup" timestamp="1611973896534">
       <screen x="1920" y="-97" width="1920" height="1055" />
     </state>

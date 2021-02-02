@@ -54,6 +54,18 @@
                 </team>
             </match-score>
 
+            <ul class="match-events">
+
+                {{#each event in match.events}}
+
+                    <li>
+                        {{event.text}}
+                    </li>
+
+                {{/each}}
+
+            </ul>
+
 		</div>
 	
 	</main>
