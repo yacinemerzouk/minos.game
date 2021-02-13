@@ -2,72 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22e11418-b0e1-40b2-9c13-0cef173ef954" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/minos.game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/minos.game.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.meteor/release" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/release" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/buttons.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/buttons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/global.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/global.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-component-navbar/client/component-navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-manager-card/client/component-manager-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-manager-card/client/component-manager-card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-manager-card/client/component-manager-card.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-manager-card/client/component-manager-card.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-manager-list/client/component-manager-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-manager-list/client/component-manager-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-manager-list/client/component-manager-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-manager-list/client/component-manager-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-manager-list/server/component-manager-list-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-manager-list/server/component-manager-list-publications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-actions/client/component-player-actions.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-actions/client/component-player-actions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-actions/client/component-player-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-actions/client/component-player-actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-card/client/component-player-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-card/client/component-player-card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-card/client/component-player-card.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-card/client/component-player-card.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-list-pagination/client/component-player-list-pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-list-pagination/client/component-player-list-pagination.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-list-pagination/client/component-player-list-pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-list-pagination/client/component-player-list-pagination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-list-pagination/client/component-player-list-pagination.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-list-pagination/client/component-player-list-pagination.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-list-pagination/server/component-pagination-methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-list-pagination/server/component-pagination-methods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-list/client/component-player-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-list/client/component-player-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-list/client/component-player-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-list/client/component-player-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-list/client/component-player-list.less" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-list/client/component-player-list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-player-list/server/component-player-list-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-player-list/server/component-player-list-publications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/component-team-menu/client/component-team-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-menu/client/component-team-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api/managers/manager-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/managers/manager-model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api/managers/managers-collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/managers/managers-collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api/minos-matches/minos-match-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/minos-matches/minos-match-model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api/minos-matches/minos-matches-collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/minos-matches/minos-matches-collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api/players/player-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/players/player-model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api/players/players-collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/players/players-collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api/teams/team-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/teams/team-model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/api/teams/teams-collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/teams/teams-collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/iron-controller/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/iron-controller/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/iron-core/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/iron-core/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/iron-dynamic-template/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/iron-dynamic-template/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/iron-layout/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/iron-layout/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/iron-location/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/iron-location/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/iron-middleware-stack/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/iron-middleware-stack/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/iron-router/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/iron-router/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/iron-transitions/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/iron-transitions/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/iron-url/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/iron-url/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/momentum-iron-router/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/momentum-iron-router/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/momentum/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/momentum/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/useraccounts-core/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/useraccounts-core/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/useraccounts-iron-routing/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/useraccounts-iron-routing/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/useraccounts-unstyled/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/useraccounts-unstyled/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/velocityjs/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/velocityjs/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-match-results/client/page-match-results.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-match-results/client/page-match-results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-match-results/client/page-match-results.less" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-match-results/client/page-match-results.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-match-results/page-match-results.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-match-results/page-match-results.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-player-details/page-player-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-player-details/page-player-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-hire-manager/client/page-team-hire-manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-hire-manager/client/page-team-hire-manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-hire-manager/page-team-hire-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-hire-manager/page-team-hire-manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-hire-player/client/page-team-hire-player.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-hire-player/client/page-team-hire-player.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-hire-player/page-team-hire-player.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-hire-player/page-team-hire-player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-players/client/page-team-players.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-players/client/page-team-players.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page-team-players/page-team-players.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-players/page-team-players.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/cron.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cron.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/fixtures.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/fixtures.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.less" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +78,7 @@
       <workItem from="1612299561523" duration="13566000" />
       <workItem from="1612398406075" duration="16504000" />
       <workItem from="1612945302337" duration="17621000" />
-      <workItem from="1613107824832" duration="11612000" />
+      <workItem from="1613107824832" duration="11781000" />
     </task>
     <servers />
   </component>
