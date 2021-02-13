@@ -79,15 +79,41 @@ Template.componentPlayerActions.events({
         // Prevent default event behavior
         event.preventDefault();
 
-        const player = new Player({ playerId: templateInstance.data.player._id });
-        player.teamId = templateInstance.data.team._id;
-        console.log(`About to save teamId ${templateInstance.data.team._id} for player ${templateInstance.data.player._id}`);
-        const saved = player.save();
+        if (templateInstance.data.team.gold >= 50) {
 
-        if (saved) {
-            Router.go('pageTeamPlayers', { teamId: templateInstance.data.team._id });
-        } else {
-            console.log('Error saving teamId for free agent player.');
+            const player = new Player({ playerId: templateInstance.data.player._id });
+            player.teamId = templateInstance.data.team._id;
+            console.log(`About to save teamId ${templateInstance.data.team._id} for player ${templateInstance.data.player._id}`);
+            const saved = player.save();
+
+            if (saved) {
+                templateInstance.data.team.gold -= 50;
+                templateInstance.data.team.save();
+                history.back();
+                // Router.go('pageTeamPlayers', { teamId: templateInstance.data.team._id });
+            } else {
+                console.log('Error saving teamId for free agent player.');
+            }
+
+        }
+
+
+
+    },
+
+    /**
+     * @event Fire a player
+     * @param event DOM event
+     * @param templateInstance Blaze template instance
+     */
+    'click [hook="fire"]': (event, templateInstance) => {
+
+        // Prevent default event behavior
+        event.preventDefault();
+
+        templateInstance.data.player.teamId = '';
+        if (confirm(`Fire ${templateInstance.data.player.firstName} ${templateInstance.data.player.lastName}?`)) {
+            templateInstance.data.player.save();
         }
 
     },

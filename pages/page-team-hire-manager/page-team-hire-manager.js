@@ -1,7 +1,7 @@
 import { Router } from 'meteor/meteorhubdotnet:iron-router';
 
 Router.route(
-	'/team/:teamId/hire/manager',
+	'/team/:teamId/hire/manager/:page?',
 	{
 		// Route name
 		name: 'pageTeamHireManager',

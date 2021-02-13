@@ -19,6 +19,7 @@ Router.route(
 				title: `${player.firstName} ${player.lastName}`,
 				player,
 				team,
+				params: this.params
 			};
 
 		}

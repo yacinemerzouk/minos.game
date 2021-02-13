@@ -4,9 +4,9 @@
 
         <div class="component-player-list-pagination" hook="component-player-list-pagination">
 
-            Showing 1-10 of 100 players
+            {{rangeMin}}-{{rangeMax}} of {{totalFreeAgents}} players
 
-            <button class="pagination-link next">NEXT</button><button class="pagination-link prev">PREV</button>
+            <a href="{{#if nextPage}}{{pathFor 'pageTeamHirePlayer' teamId=this.page.params.teamId page=nextPage}}{{/if}}" class="pagination-link next {{#unless nextPage}}disabled{{/unless}}">NEXT</a><a href="{{#if previousPage}}{{pathFor 'pageTeamHirePlayer' teamId=this.page.params.teamId page=previousPage}}{{/if}}" class="pagination-link prev {{#unless previousPage}}disabled{{/unless}}">PREV</a>
 
         </div>
 

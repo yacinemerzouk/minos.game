@@ -11,6 +11,10 @@
 					<div class="navbar-left">
 						<a href="{{getPreviousPage}}" class="navigate-left">Back</a>
 					</div>
+                {{else}}
+                    <div class="navbar-left">
+                        <a href="{{pathFor 'pageHome'}}">Home</a>
+                    </div>
 				{{/if}}
 			{{/if}}
 			

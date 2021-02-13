@@ -1,0 +1,108 @@
+.component-match-data{
+
+	ul.toggler {
+
+		border-radius: 3px;
+		background: #DDD;
+		list-style: none;
+		padding: 5px;
+		margin-bottom: 10px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		li {
+			border-radius: 3px;
+			padding: 5px 7px;
+			display: inline-block;
+			text-align: center;
+		}
+		li.active {
+			background: #FFF;
+		}
+
+	}
+
+	ul.match-events {
+		border: 1px solid #DDD;
+		border-radius: 3px;
+		list-style: none;
+		margin-bottom: 10px;
+		background: #FFF;
+		li {
+			border-bottom: 1px solid #DDD;
+			position: relative;
+			padding: 16px 16px 15px 15px;
+
+			font-weight: bold;
+			line-height: 20px;
+			color: #444;
+			display: block;
+			team-logo {
+				float: left;
+				padding: 4px;
+				width: 32px;
+				height: 32px;
+				position: relative;
+				bottom: 2px;
+				margin-right: 5px;
+				border-radius: 3px;
+				opacity: 80%;
+				img{
+					width: 100%;
+				}
+			}
+			player-meta, team-meta {
+
+				font-size: 12px;
+				line-height: 12px;
+				margin-bottom: 5px;
+				text-transform: uppercase;
+				display: block;
+			}
+			team-meta {
+				color: #BBB;
+			}
+			player-meta {
+				color: #999;
+			}
+			match-event {
+				display: block;
+				margin-top: 7px;
+				font-size: 15px !important;
+				position: relative;
+				top: 3px;
+				scored {
+					color: #0571A6;
+					font-size: 15px;
+					line-height: 22px;
+				}
+				gored {
+					color: #660000;
+					font-size: 15px;
+					line-height: 22px;
+				}
+				got-lost {
+					color: #694818;
+					font-size: 15px;
+					line-height: 22px;
+				}
+				victim {
+					color: #AAA;
+					font-size: 15px;
+					line-height: 22px;
+				}
+
+				span:last-child {
+					display: none;
+				}
+			}
+
+		}
+		li:last-child {
+			border-bottom: none;
+		}
+
+	}
+
+
+
+}

@@ -4,80 +4,93 @@
 
         <div id="component-player-card" class="component-player-card" hook="component-player-card">
 
-            <player>
+            <a href="{{#if linkToPlayerPage}}{{pathFor 'pagePlayerDetails' teamId=page.team._id playerId=player._id}}{{/if}}">
 
-                <overview>
-                    <info>
-                        <name>
-                        {{player.firstName}} {{player.lastName}}
-                        </name>
-                        <position>
-                            {{player.position}}
-                        </position>
-                    </info>
+                <player>
 
-                    <overall>
-                        {{playerRating player=player}}
-                    </overall>
-                </overview>
+                    <overview>
+                        <info>
+                            <name>
+                            {{player.firstName}} {{player.lastName}}
+                            </name>
+                            <position>
+                                {{player.position}}
+                            </position>
+                        </info>
 
-                <stats>
-                    <stat>
-                        STR
-                        <rating>{{player.strength}}</rating>
-                    </stat>
-                    <stat>
-                        DEX
-                        <rating>{{player.dexterity}}</rating>
-                    </stat>
-                    <stat>
-                        FOR
-                        <rating>{{player.fortitude}}</rating>
-                    </stat>
-                    <stat>
-                        ANT
-                        <rating>{{player.anticipation}}</rating>
-                    </stat>
-                    <stat>
-                        QUI
-                        <rating>{{player.quickness}}</rating>
-                    </stat>
-                    <stat>
-                        THR
-                        <rating>{{player.throwing}}</rating>
-                    </stat>
-                    <stat>
-                        CAT
-                        <rating>{{player.catching}}</rating>
-                    </stat>
-                    <stat>
-                        EVA
-                        <rating>{{player.evade}}</rating>
-                    </stat>
-                    <stat>
-                        GOR
-                        <rating>{{player.gore}}</rating>
-                    </stat>
-                    <stat>
-                        MAZ
-                        <rating>{{player.maze}}</rating>
-                    </stat>
-                </stats>
+                        <overall>
+                            {{playerRating player=player}}
+                        </overall>
+                    </overview>
 
-                <report>
-                    <looks>
-                        Scouting: None
-                    </looks>
-                    {{#if linkToPlayerPage}}
-                        <more>
-                            <a href="{{pathFor 'pagePlayerDetails' teamId=page.team._id playerId=player._id}}">
-                                View&nbsp;Details
-                            </a>
-                        </more>
-                    {{/if}}
-                </report>
+                    <stats>
+                        <stat>
+                            STR
+                            <rating>{{player.strength}}</rating>
+                        </stat>
+                        <stat>
+                            DEX
+                            <rating>{{player.dexterity}}</rating>
+                        </stat>
+                        <stat>
+                            FOR
+                            <rating>{{player.fortitude}}</rating>
+                        </stat>
+                        <stat>
+                            ANT
+                            <rating>{{player.anticipation}}</rating>
+                        </stat>
+                        <stat>
+                            QUI
+                            <rating>{{player.quickness}}</rating>
+                        </stat>
+                        <stat>
+                            THR
+                            <rating>{{player.throwing}}</rating>
+                        </stat>
+                        <stat>
+                            CAT
+                            <rating>{{player.catching}}</rating>
+                        </stat>
+                        <stat>
+                            EVA
+                            <rating>{{player.evade}}</rating>
+                        </stat>
+                        <stat>
+                            GOR
+                            <rating>{{player.gore}}</rating>
+                        </stat>
+                        <stat>
+                            MAZ
+                            <rating>{{player.maze}}</rating>
+                        </stat>
+                    </stats>
 
-            </player>
+                    <report>
+                        <looks>
+                            Scouting: None
+                        </looks>
+                    </report>
+                    <season>
+                        SEASON:
+                        {{#if player.stats.season1.games}}{{player.stats.season1.games}}{{else}}0{{/if}} MATCHES
+                        &bull;
+                        {{#if player.stats.season1.scores}}{{player.stats.season1.scores}}{{else}}0{{/if}} SCORES
+                        &bull;
+                        {{#if player.stats.season1.gores}}{{player.stats.season1.gores}}{{else}}0{{/if}} GORES
+                    </season>
+                    <career>
+                        CAREER:
+                        {{#if player.stats.career.games}}{{player.stats.career.games}}{{else}}0{{/if}} MATCHES
+                        &bull;
+                        {{#if player.stats.career.scores}}{{player.stats.career.scores}}{{else}}0{{/if}} SCORES
+                        &bull;
+                        {{#if player.stats.career.gores}}{{player.stats.career.gores}}{{else}}0{{/if}} GORES
+                    </career>
+
+                </player>
+
+            </a>
 
         </div>
 

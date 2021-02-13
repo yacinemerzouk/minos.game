@@ -6,9 +6,9 @@
 		
 
                 {{#if eq params.teamId match.winner}}
-                <match-result class="win">
-                    You won!
-                </match-result>
+                    <match-result class="win">
+                        You won!
+                    </match-result>
                 {{else}}
                     {{#if eq match.winner 'draw'}}
                         <match-result class="draw">
@@ -54,17 +54,7 @@
                 </team>
             </match-score>
 
-            <ul class="match-events">
-
-                {{#each event in match.events}}
-
-                    <li>
-                        {{event.text}}
-                    </li>
-
-                {{/each}}
-
-            </ul>
+            {{>componentMatchData page=this match=match loggedInTeam=loggedInTeam whiteTeam=whiteTeam blackTeam=blackTeam}}
 
 		</div>
 	

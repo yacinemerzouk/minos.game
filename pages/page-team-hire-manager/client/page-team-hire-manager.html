@@ -2,11 +2,13 @@
 
 	<main class="content">
 	
-		<div class="page page-team-hire-manager">
+		<div class="page page-double-footer page-team-hire-manager">
 
             {{> componentManagerList page=this}}
-	
-		</div>
+
+            {{> componentTeamFooter teamId=this.params.teamId}}
+
+        </div>
 	
 	</main>
 

@@ -1,8 +1,52 @@
 <template name="genericLayout">
-	
+
+    <!-- This momentum block is absolutely not necessary and              -->
+    <!-- it makes the app more complex for no good reason, but it handles -->
+    <!-- the fancy animated page transitions and I was toying             -->
+    <!-- with it and having fun, so that's that.                          -->
     {{#momentum plugin='iron-router' options=transition}}
+
+        <!-- Now, this right here is code that runs on every page -->
+        <!-- You have the top nav - the title bar                 -->
+        <!-- And the "yield" helper spits out the actual content  -->
+        <!-- of the page. "What page? Where's the page?" you aks. -->
+        <!-- Well, do not fret, Mr. programmer guy, you'll find   -->
+        <!-- all the pages in the /pages folder (easy peasy).     -->
+        <!-- You'll probably want to check out these files first: -->
+        <!-- /pages/page-home.js                                  -->
+        <!-- /pages/client/page-home.html                         -->
 		{{>componentNavbar page=this}}
     	{{>yield}}
+
+        <!-- And here's an absolutely gratuitous ASCII minotaur that    -->
+        <!-- I grabbed online from https://ascii.co.uk/art/minotaurus   -->
+        <!--        -""\                                                -->
+        <!--    .-"  .`)     (                                          -->
+        <!--   j   .'_+     :[                )      .^--..             -->
+        <!--  i    -"       |l                ].    /      i            -->
+        <!-- ," .:j         `8o  _,,+.,.--,   d|   `:::;    b           -->
+        <!-- i  :'|          "88p;.  (-."_"-.oP        \.   :           -->
+        <!-- ; .  (            >,%%%   f),):8"          \:'  i          -->
+        <!--i  :: j          ,;%%%:; ; ; i:%%%.,        i.   `.         -->
+        <!--i  `: ( ____  ,-::::::' ::j  [:```          [8:   )         -->
+        <!--<  ..``'::::8888oooooo.  :(jj(,;,,,         [8::  <         -->
+        <!--`. ``:.      oo.8888888888:;%%%8o.::.+888+o.:`:'  |         -->
+        <!-- `.   `        `o`88888888b`%%%%%88< Y888P""'-    ;         -->
+        <!--   "`---`.       Y`888888888;;.,"888b."""..::::'-'          -->
+        <!--          "-....  b`8888888:::::.`8888._::-"                -->
+        <!--             `:::. `:::::O:::::::.`%%'|                     -->
+        <!--              `.      "``::::::''    .'                     -->
+        <!--                `.                   <                      -->
+        <!--                  +:         `:   -';                       -->
+        <!--                   `:         : .::/                        -->
+        <!--                    ;+_  :::. :..;;;       LS               -->
+        <!--                    ;;;;,;;;;;;;;,;;                        -->
+
     {{/momentum}}
+    <!-- And this is the closing tag for my momentum block I mentioned  -->
+    <!-- These blocks and helpers with the double-curlies or            -->
+    <!-- triple-curliesSome blocks are part of a templating system      -->
+    <!-- bundled with MeteorJS called BlazeJS. If you're new to coding  -->
+    <!-- I say don't worry about this; you can figure it out as you go. -->
 
 </template>

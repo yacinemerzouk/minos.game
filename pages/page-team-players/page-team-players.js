@@ -18,6 +18,7 @@ Router.route(
 				title: 'My Players',
 				players: team.players(),
 				team,
+				params: this.params,
 				actions: {
 					previous: {
 						link: Router.path('pageTeamDashboard', { teamId: this.params.teamId })

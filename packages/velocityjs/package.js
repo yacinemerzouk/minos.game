@@ -7,7 +7,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   if (api.versionsFrom)
-    api.versionsFrom('METEOR@1.12');
+    api.versionsFrom('METEOR@2.0');
 
   api.addFiles(['velocity.js', 'velocity.ui.js'], 'client');
 });

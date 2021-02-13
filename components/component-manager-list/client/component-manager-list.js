@@ -24,9 +24,10 @@ Template.componentManagerList.onCreated(function() {
         const templateData = Template.currentData();
 
         // Return all cursors from a single subscription
+        console.log(templateData.page?.params?.page || 1);
         this.subscribe(
             'componentManagerList',
-            {},
+            { page: templateData.page?.params?.page || 1 },
             {
                 onReady: () => {
 
@@ -34,7 +35,7 @@ Template.componentManagerList.onCreated(function() {
                     this.subsReady.set(true);
 
                     // Log performance
-                    // Log.warn(`[SUB] componentManagerList: ${new Date().getTime() - this.subsStartTimestamp}ms`);
+                    Log.warn(`[SUB] componentManagerList: ${new Date().getTime() - this.subsStartTimestamp}ms`);
 
                 },
             },
@@ -82,10 +83,11 @@ Template.componentManagerList.helpers({
     },
 
     managers() {
-
-        const managers = Managers.find({ teamId: { $exists: false } }, { limit: 10 });
+        const page = this.page?.params?.page || 1;
+        const managers = Managers.find({ $or: [{ teamId: { $exists: false } }, { teamId: '' }] }, { limit: 10 });
+        console.log(`Found ${managers.count()} managers on page ${page}`);
         return managers;
 
-    }
+    },
 
 });

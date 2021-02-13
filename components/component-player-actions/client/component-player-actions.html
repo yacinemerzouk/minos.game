@@ -4,8 +4,12 @@
 
         <div class="component-player-actions" hook="component-player-actions">
 
-            <button class="button">Scout This Player (1 Intel)</button>
-            <button class="button" hook="hire">Hire This Player (50 Gold)</button>
+            {{#if eq team._id player.teamId}}
+                <button class="button button-red" hook="fire">Fire This Player</button>
+            {{else}}
+                <button class="button">Scout This Player (1 Intel)</button>
+                <button class="button" hook="hire">Hire This Player (50 Gold)</button>
+            {{/if}}
 
         </div>
 

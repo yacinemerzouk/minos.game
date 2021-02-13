@@ -10,7 +10,7 @@ Npm.depends({
 });
 
 Package.on_use(function (api) {
-  api.versionsFrom('METEOR@1.12');
+  api.versionsFrom('METEOR@2.0');
   // meteor dependencies
   api.use('underscore');
   api.use('webapp', 'server');

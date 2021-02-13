@@ -14,7 +14,9 @@ SyncedCron.add({
         // If number of teams in queue is not even, add a cpu team to the array
         if ( teamsInQueue.length % 2 === 1) {
 
-            const extraTeam = Teams.findOne({ userId: { $exists: false } });
+            const totalPossibleTeams = Teams.find({ userId: { $exists: false } }).count();
+            const n = Math.floor( Math.random() * totalPossibleTeams );
+            const extraTeam = Teams.findOne({ userId: { $exists: false } }, { skip: n });
             teamsInQueue.push(extraTeam);
 
         }

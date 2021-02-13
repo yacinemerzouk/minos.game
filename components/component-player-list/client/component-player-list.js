@@ -26,7 +26,7 @@ Template.componentPlayerList.onCreated(function() {
         // Return all cursors from a single subscription
         this.subscribe(
             'componentPlayerList',
-            {},
+            { page: templateData.page?.params?.page || 1 },
             {
                 onReady: () => {
 
@@ -82,8 +82,9 @@ Template.componentPlayerList.helpers({
     },
 
     players() {
-
+        const page = this.page?.params?.page || 1;
         const players = Players.find({ teamId: { $exists: false } }, { limit: 10 });
+        console.log(`Found ${players.count()} players on page ${page}`);
         return players;
 
     }

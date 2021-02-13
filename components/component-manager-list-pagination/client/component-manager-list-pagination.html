@@ -1,0 +1,19 @@
+<template name="componentManagerListPagination">
+
+    {{#if subsAndDataReady}}
+
+        <div class="component-manager-list-pagination" hook="component-manager-list-pagination">
+
+            {{rangeMin}}-{{rangeMax}} of {{totalFreeAgents}} managers
+
+            <a href="{{#if nextPage}}{{pathFor 'pageTeamHireManager' teamId=this.page.params.teamId page=nextPage}}{{/if}}" class="pagination-link next {{#unless nextPage}}disabled{{/unless}}">NEXT</a><a href="{{#if previousPage}}{{pathFor 'pageTeamHireManager' teamId=this.page.params.teamId page=previousPage}}{{/if}}" class="pagination-link prev {{#unless previousPage}}disabled{{/unless}}">PREV</a>
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>

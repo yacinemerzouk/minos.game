@@ -6,7 +6,7 @@
 
 		    {{#if players}}
                 {{#each player in players}}
-                    {{> componentPlayerCard page=page player=player linkToPlayerPage=true}}
+                    {{> componentPlayerCard page=this player=player linkToPlayerPage=true}}
                 {{/each}}
             {{else}}
                 <empty>
@@ -14,6 +14,8 @@
                     <a class="button navigate-right" href="{{pathFor 'pageTeamHirePlayer' teamId=team._id}}">Hire Players</a>
                 </empty>
             {{/if}}
+
+            {{> componentTeamFooter teamId=this.params.teamId}}
 
 		</div>
 	

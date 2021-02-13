@@ -1,0 +1,118 @@
+<template name="componentMatchData">
+
+    {{#if subsAndDataReady}}
+
+        <div class="component-match-data" hook="component-match-data">
+
+            <ul class="toggler">
+                <li class="{{#if eq activeTab 'gold'}}active{{/if}}" hook="tab" data-tab-name="gold">Gold</li>
+                <li class="{{#if eq activeTab 'events'}}active{{/if}}" hook="tab" data-tab-name="events">Events</li>
+                <li class="{{#if eq activeTab 'stats'}}active{{/if}}" hook="tab" data-tab-name="stats">Stats</li>
+                <li class="{{#if eq activeTab 'levelUps'}}active{{/if}}" hook="tab" data-tab-name="levelUps">Level Ups</li>
+            </ul>
+
+            {{#if eq activeTab 'gold'}}
+                {{#if match.winnings}}
+                    <ul id="winnings" class="match-events">
+                        {{#each purse in match.winnings}}
+                            {{#if eq purse.teamId loggedInTeam._id}}
+                                <li>
+                                    Your coffers grew by <span class="increase">{{purse.net}} GOLD</span>
+                                </li>
+                                <li style="color: #777;">
+                                    You were awarded {{purse.winnings}} GOLD
+                                </li>
+                                <li style="color: #777;">
+                                    You spent {{purse.expenses}} GOLD on salaries
+                                </li>
+
+                            {{/if}}
+                        {{/each}}
+                    </ul>
+                {{/if}}
+            {{/if}}
+
+            {{#if eq activeTab 'levelUps'}}
+                {{#if match.managerLevelUps}}
+                    <ul class="match-events">
+                        {{#each levelUp in match.managerLevelUps}}
+                            <li>
+                                {{levelUp.firstName}}
+                                {{levelUp.lastName}}
+                                {{levelUp.change}}
+                            </li>
+                        {{/each}}
+                    </ul>
+                {{/if}}
+
+                {{#if match.playerLevelUps}}
+                    <ul class="match-events">
+                        {{#each levelUp in match.playerLevelUps}}
+                            {{#if eq levelUp.teamId loggedInTeam._id}}
+                                <li>
+                                    <team-logo style="background: {{loggedInTeam.teamColor}}">
+                                        <img src="/images/minos-team-crest.png">
+                                    </team-logo>
+                                    <team-meta>{{loggedInTeam.teamName}}</team-meta>
+                                    <player-meta>{{levelUp.firstName}} {{levelUp.lastName}} - {{levelUp.position}}</player-meta>
+                                    <match-event>
+                                        {{#each change in levelUp.changes}}
+                                            {{change.change}}<span>, </span>
+                                        {{/each}}
+                                    </match-event>
+                                </li>
+                            {{/if}}
+                        {{/each}}
+                    </ul>
+                {{/if}}
+            {{/if}}
+
+            {{#if eq activeTab 'events'}}
+
+                <ul class="match-events">
+
+                    {{#each event in match.events}}
+
+                        {{#if event.major}}
+                            <li>
+                                <team-logo style="background: {{event.team.teamColor}}">
+                                    <img src="/images/minos-team-crest.png">
+                                </team-logo>
+                                <team-meta>{{event.team.teamName}}</team-meta>
+                                <player-meta>{{event.playerMeta}}</player-meta>
+                                {{#if event.seasonStats}}
+                                    <season-stats>{{event.seasonStats}}</season-stats>
+                                {{/if}}
+                                <match-event>
+                                    {{event.player}}
+                                    {{#if eq event.action 'gored'}}
+                                        <gored>GORED</gored>
+                                        <victim>{{event.victim}}</victim>.
+                                    {{/if}}
+                                    {{#if eq event.action 'scored'}}
+                                        <scored>SCORED!</scored>
+                                    {{/if}}
+                                    {{#if eq event.action 'got lost'}}
+                                        <got-lost>got lost in the maze.</got-lost>
+                                    {{/if}}
+
+                                </match-event>
+
+                            </li>
+                        {{/if}}
+
+                    {{/each}}
+
+                </ul>
+
+            {{/if}}
+
+        </div>
+
+    {{else}}
+
+        {{> spinner}}
+
+    {{/if}}
+
+</template>

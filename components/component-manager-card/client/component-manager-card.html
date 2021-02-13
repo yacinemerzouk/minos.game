@@ -4,61 +4,81 @@
 
         <div class="component-manager-card" hook="component-manager-card">
 
-            <manager>
+            <a class="{{#if linkToManagerPage}}navigate-right{{/if}}" href="{{#if linkToManagerPage}}{{pathFor 'pageManagerDetails' teamId=page.params.teamId managerId=manager._id}}{{/if}}">
 
-                <overview>
-                    <info>
-                        <name>
-                            {{manager.firstName}} {{manager.lastName}}
-                        </name>
-                        <position>
-                            Career: {{manager.wins}}W / {{manager.losses}}L / {{manager.draws}}D
-                        </position>
-                    </info>
+                <manager>
 
-                    <overall>
-                        {{managerRating manager=manager}}
-                    </overall>
-                </overview>
+                    <overview>
+                        <info>
+                            <name>
+                                {{manager.firstName}} {{manager.lastName}}
+                            </name>
+                            <position>
+                                Manager
+                            </position>
+                        </info>
 
-                <stats>
-                    <stat>
-                        SCO
-                        <rating>{{manager.scouting}}</rating>
-                    </stat>
-                    <stat>
-                        STR
-                        <rating>{{manager.strategy}}</rating>
-                    </stat>
-                    <stat>
-                        TAC
-                        <rating>{{manager.tactics}}</rating>
-                    </stat>
-                    <stat>
-                        MOT
-                        <rating>{{manager.motivation}}</rating>
-                    </stat>
-                    <stat>
-                        TRA
-                        <rating>{{manager.training}}</rating>
-                    </stat>
+                        <overall>
+                            {{managerRating manager=manager teamId=page.params.teamId}}
+                        </overall>
+                    </overview>
 
-                </stats>
+                    <stats>
+                        <stat>
+                            SCO
+                            <rating>{{manager.scouting}}</rating>
+                        </stat>
+                        <stat>
+                            STR
+                            <rating>{{manager.strategy}}</rating>
+                        </stat>
+                        <stat>
+                            TAC
+                            <rating>{{manager.tactics}}</rating>
+                        </stat>
+                        <stat>
+                            MOT
+                            <rating>{{manager.motivation}}</rating>
+                        </stat>
+                        <stat>
+                            TRA
+                            <rating>{{manager.training}}</rating>
+                        </stat>
 
-                <report>
-                    <looks>
-                        Management Style: Unknown
-                    </looks>
-                    {{#if linkToManagerPage}}
-                        <more>
-                            <a href="{{pathFor 'pageManagerDetails' teamId=page.params.teamId managerId=manager._id}}">
-                                View&nbsp;Details
-                            </a>
-                        </more>
-                    {{/if}}
-                </report>
+                    </stats>
 
-            </manager>
+                    <report>
+
+                        <looks>
+                            Reputation: {{managementStyle manager=manager}}
+                        </looks>
+                    </report>
+                    <season>
+                        SEASON:
+<!--                        {{#if manager.stats.season1.games}}{{manager.stats.season1.games}}{{else}}0{{/if}} MTCH-->
+<!--                        &bull;-->
+                        {{#if manager.stats.season1.wins}}{{manager.stats.season1.wins}}{{else}}0{{/if}} WINS
+                        &bull;
+                        {{#if manager.stats.season1.losses}}{{manager.stats.season1.losses}}{{else}}0{{/if}} LOSSES
+                        &bull;
+                        {{#if manager.stats.season1.draws}}{{manager.stats.season1.draws}}{{else}}0{{/if}} DRAWS
+                    </season>
+                    <career>
+                        CAREER:
+<!--                        {{#if manager.stats.career.games}}{{manager.stats.career.games}}{{else}}0{{/if}} MATCHES-->
+<!--                        &bull;-->
+                        {{#if manager.stats.career.wins}}{{manager.stats.career.wins}}{{else}}0{{/if}} WINS
+                        &bull;
+                        {{#if manager.stats.career.losses}}{{manager.stats.career.losses}}{{else}}0{{/if}} LOSSES
+                        &bull;
+                        {{#if manager.stats.career.draws}}{{manager.stats.career.draws}}{{else}}0{{/if}} DRAWS
+                    </career>
+
+
+
+                </manager>
+
+            </a>
 
         </div>
 

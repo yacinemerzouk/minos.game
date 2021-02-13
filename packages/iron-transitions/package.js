@@ -6,7 +6,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-	api.versionsFrom('METEOR@1.12');
+	api.versionsFrom('METEOR@2.0');
 	api.use(['less', 'meteorhubdotnet:iron-router', 'meteorhubdotnet:momentum', 'meteorhubdotnet:momentum-iron-router', 'spacebars', 'templating'], 'client');
 	api.use('reactive-var');
 	api.addFiles('iron-transitions.js');

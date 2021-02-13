@@ -29,6 +29,17 @@ Template.registerHelper('playerRating', function(data) {
 // ===================================================
 // HELPER: managerRating
 // ===================================================
+Template.registerHelper('managementStyle', function(data) {
+
+    const manager = new Manager();
+    manager.populate({ managerData: data.hash.manager });
+    return manager.style();
+
+});
+
+// ===================================================
+// HELPER: managerRating
+// ===================================================
 Template.registerHelper('managerRating', function(data) {
 
     const manager = new Manager();

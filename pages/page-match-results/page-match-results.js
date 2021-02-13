@@ -37,7 +37,7 @@ Router.route(
 				}
 			}
 
-			return { params, title, actions, match, whiteTeam, blackTeam };
+			return { params, title, actions, match, loggedInTeam, whiteTeam, blackTeam };
 
 		}
 

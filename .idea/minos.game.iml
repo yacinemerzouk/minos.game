@@ -7,6 +7,11 @@
       <excludeFolder url="file://$MODULE_DIR$/packages/momentum/example/.meteor/local" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/iron-autoscroll/examples/non-router/.meteor/local" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/iron-autoscroll/examples/iron-router-example/.meteor/local" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/iron-autoscroll/examples/deprecated-iron-router-example/.meteor/local" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/iron-autoscroll/examples/flow-router-ssr-example/.meteor/local" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/iron-autoscroll/examples/flow-router-example/.meteor/local" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
