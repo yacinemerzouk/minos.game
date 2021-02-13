@@ -34,6 +34,17 @@ Other, slightly more technical things of note:
 Ok, as I was saying, start here:
 `/client/layouts/generic-layout.html`
 
+Ridiculous Idea :: 99% Open Source
+==================================
+
+All the code of this game is open source except a single file:
+the Minos Engine, which determines who wins games
+and why. You'll be able to infer and understand a lot
+of the game's inner working by reading the code,
+but some of it will remain a mystery. You must play
+the game and send your team in the arena to see
+what happens.
+
 Random Notes :: What The Hell Is Going On Here?
 ===============================================
 
