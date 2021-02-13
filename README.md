@@ -30,4 +30,7 @@ Other, slightly more technical things of note:
   are pretty almost the same as your typical `.css` files.
 * It runs on a Mongo database. You won't be able to see the database collections
   but knowing this might help you understand the code.
+  
+Ok, as I was saying, start here:
+`/client/layouts/generic-layout.html`
 
