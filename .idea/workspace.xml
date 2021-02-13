@@ -4,7 +4,6 @@
     <list default="true" id="22e11418-b0e1-40b2-9c13-0cef173ef954" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/generic-layout/generic-layout.less" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
       <workItem from="1612299561523" duration="13566000" />
       <workItem from="1612398406075" duration="16504000" />
       <workItem from="1612945302337" duration="17621000" />
-      <workItem from="1613107824832" duration="11781000" />
+      <workItem from="1613107824832" duration="12320000" />
     </task>
     <servers />
   </component>
