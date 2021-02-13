@@ -34,3 +34,15 @@ Other, slightly more technical things of note:
 Ok, as I was saying, start here:
 `/client/layouts/generic-layout.html`
 
+Random Notes :: What The Hell Is Going On Here?
+===============================================
+
+This is a side project that I started to test out new HTML/JS/CSS concepts
+I come across. I'm just having fun here, so I want to warn you that
+playing this game will have you wonder "what the hell is going on here?" - a lot.
+
+If you're having fun with the game, please tell your friends about it. You can
+also check out my actual real games that pay my actual bills at
+[societyofcuriosities.com](https://www.societyofcuriosities.com)
+
+
