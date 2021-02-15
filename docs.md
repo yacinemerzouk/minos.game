@@ -34,4 +34,4 @@ Page Data :: Properties
 |actions.next.text      |String     |Yes        |Text to display on the top navbar's right button|
 |actions.previous       |Object     |Yes        |Info to display the right button in the top navbar|
 |actions.previous.link  |String     |Yes        |URL the "back" button should link to|
-|team                   |Team       |Yes        |The team
+|team                   |Team       |Yes        |The team the logged-in user is currently playing
