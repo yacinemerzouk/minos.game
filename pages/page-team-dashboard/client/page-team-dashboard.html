@@ -1,19 +1,29 @@
 <template name="pageTeamDashboard">
 
 	<main class="content">
-	
+
 		<div class="page page-team-dashboard">
 
-            {{> componentPlayButton teamId=this.params.teamId}}
-			
-            {{> componentTeamRecord teamId=this.params.teamId}}
-		
-			{{> componentTeamMenu teamId=this.params.teamId}}
+            <!-- ENTER THE ARENA!!! -->
+            <!-- Can only ever be seen by the active team -->
+            <!-- so the param is a Team object -->
+            {{> componentPlayButton team=team}}
 
-            {{> componentTeamFooter teamId=this.params.teamId}}
-	
+            <!-- TEAM RECORD -->
+            <!-- Could be seen by other players scoping out -->
+            <!-- the competition. Gets only a teamId so it can -->
+            <!-- handle its own subs -->
+            {{> componentTeamRecord teamId=this.params.teamId}}
+
+            <!-- TEAM MENU -->
+            <!-- Can only ever be seen by the active team -->
+            <!-- so the param is a Team object -->
+			{{> componentTeamMenu team=team}}
+
+            {{> componentTeamFooter team=team}}
+
 		</div>
-	
+
 	</main>
 
 </template>

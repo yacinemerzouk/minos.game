@@ -23,7 +23,7 @@ Template.componentTeamMenu.onCreated(function() {
         // Return all cursors from a single subscription
         this.subscribe(
             'componentTeamMenu',
-            { teamId: templateData.teamId },
+            { teamId: templateData.team._id },
             {
                 onReady: () => {
 
@@ -77,15 +77,13 @@ Template.componentTeamMenu.helpers({
 
     nbPlayers() {
 
-        const team = new Team({ teamId: this.teamId });
-        return team.nbPlayers();
+        return this.team.nbPlayers();
 
     },
 
     nbManagers() {
 
-        const team = new Team({ teamId: this.teamId });
-        return team.nbManagers();
+        return this.team.nbManagers();
 
     },
 

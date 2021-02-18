@@ -83,8 +83,9 @@ Template.componentTeamRecord.helpers({
 
     team() {
 
-        return new Team({ teamId: this.teamId });
-
+        const team = new Team({ teamId: this.teamId });
+        console.log(team);
+        return team;
     },
 
 });

@@ -7,15 +7,33 @@
             <section class="record">
                 <div class="wins">
                     <small>Wins</small>
-                    <big>{{team.wins}}</big>
+                    <big>
+                        {{#if team.stats.season1.wins}}
+                            {{team.stats.season1.wins}}
+                        {{else}}
+                            0
+                        {{/if}}
+                    </big>
                 </div>
                 <div class="losses">
                     <small>Losses</small>
-                    <big>{{team.losses}}</big>
+                    <big>
+                        {{#if team.stats.season1.losses}}
+                            {{team.stats.season1.losses}}
+                        {{else}}
+                            0
+                        {{/if}}
+                    </big>
                 </div>
                 <div class="draws">
                     <small>Draws</small>
-                    <big>{{team.draws}}</big>
+                    <big>
+                        {{#if team.stats.season1.draws}}
+                            {{team.stats.season1.draws}}
+                        {{else}}
+                            0
+                        {{/if}}
+                    </big>
                 </div>
             </section>
 

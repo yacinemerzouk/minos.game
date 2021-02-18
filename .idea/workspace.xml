@@ -3,7 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="22e11418-b0e1-40b2-9c13-0cef173ef954" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-play-button/client/component-play-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-play-button/client/component-play-button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-play-button/server/component-play-button-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-play-button/server/component-play-button-publications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-team-footer/client/component-team-footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-footer/client/component-team-footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-team-footer/client/component-team-footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-footer/client/component-team-footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-team-footer/server/component-team-footer-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-footer/server/component-team-footer-publications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-team-menu/client/component-team-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-menu/client/component-team-menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-team-menu/server/component-team-menu-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-menu/server/component-team-menu-publications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-team-record/client/component-team-record.html" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-record/client/component-team-record.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-team-record/client/component-team-record.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-record/client/component-team-record.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/component-team-record/server/component-team-record-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/component-team-record/server/component-team-record-publications.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/api/teams/teams-collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/teams/teams-collection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page-home/client/page-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-home/client/page-home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page-team-dashboard/client/page-team-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-dashboard/client/page-team-dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page-team-dashboard/page-team-dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-dashboard/page-team-dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page-team-dashboard/server/page-team-dashboard-publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page-team-dashboard/server/page-team-dashboard-publications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/private/page-template/page.js.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/private/page-template/page.js.tmpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +94,8 @@
       <workItem from="1612398406075" duration="16504000" />
       <workItem from="1612945302337" duration="17621000" />
       <workItem from="1613107824832" duration="17700000" />
-      <workItem from="1613361861486" duration="2271000" />
+      <workItem from="1613361861486" duration="2752000" />
+      <workItem from="1613423630476" duration="5668000" />
     </task>
     <servers />
   </component>

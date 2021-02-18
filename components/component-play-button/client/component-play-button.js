@@ -26,7 +26,7 @@ Template.componentPlayButton.onCreated(function() {
         // Return all cursors from a single subscription
         this.subscribe(
             'componentPlayButton',
-            { teamId: templateData.teamId },
+            { teamId: templateData.team._id },
             {
                 onReady: () => {
 
@@ -80,7 +80,7 @@ Template.componentPlayButton.events({
         event.preventDefault();
 
         // Mark team as queued
-        const team = new Team({ teamId: templateInstance.data.teamId });
+        const team = templateInstance.currentData().team;
         team.inArenaQueue = true;
         team.save();
 
@@ -104,20 +104,13 @@ Template.componentPlayButton.helpers({
 
     hasManager() {
 
-        const team = new Team({ teamId: this.teamId });
-        return team.nbManagers() >= 1;
+        return this.team.nbManagers() >= 1;
+
     },
 
     hasEnoughPlayers() {
 
-        const team = new Team({ teamId: this.teamId });
-        return team.nbPlayers() >= 6;
-
-    },
-
-    team() {
-
-        return new Team({ teamId: this.teamId });
+        return this.team.nbPlayers() >= 6;
 
     },
 

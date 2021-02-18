@@ -1,5 +1,9 @@
+These docs are just for me, really. I'm not sure
+how much sense they'll make to anyone else. Just
+keep that in mind as you read.
+
 Guideline :: Pages Are Dumb And Boring
-===========================
+======================================
 
 Pages should be as dumb as possible. Ideally,
 grabbing the params from the URL and the data
@@ -35,3 +39,34 @@ Page Data :: Properties
 |actions.previous       |Object     |Yes        |Info to display the right button in the top navbar|
 |actions.previous.link  |String     |Yes        |URL the "back" button should link to|
 |team                   |Team       |Yes        |The team the logged-in user is currently playing
+
+Guideline :: RORO
+=================
+
+All functions, methods, and publications should receive an object and return an object (RORO).
+
+This allows for clearer code thanks to object destructuring in the function declarations.
+
+Guideline :: Be Predictable
+===========================
+
+If you do something one way, do it the same way everywhere. If
+you change your mind, you better find the time to change the
+way you do it everywhere.
+
+Guideline :: Resist The Urge To Refactor
+========================================
+
+Only refactor code when it's necessary, not when you
+feel like it.
+
+Guideline :: Team vs teamId
+===========================
+
+What to give as an argument to a component?
+
+If the component can only be seen by the team being played by the user,
+give a Team object.
+
+If it can be viewed by other players, give a teamId so 
+it can handle its own subs.

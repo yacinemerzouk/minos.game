@@ -1,14 +1,34 @@
-import { Router } from 'meteor/meteorhubdotnet:iron-router';
-
 Router.route(
-	'/PATH_GOES_HERE',
+	'/page/path/goes/here',
 	{
 		// Route name
-		name: 'TEMPLATE_NAME_GOES_HERE',
-		
+		name: '',
+
 		// Page Data
-		data: {
-			title: 'PAGE_TITLE_GOES_HERE',
+		data: function() {
+
+			// Page title to display in top navbar
+			const title = '';
+
+			// Page params
+			const params = this.params;
+
+			// Team object - the team being played right now
+			// const team = new Team({ teamId: this.params.teamId });
+
+			// Action buttons to display in the top navbar
+			const actions = {
+				previous: {
+					link: Router.path('')
+				},
+				next: {
+					link: Router.path(''),
+					text: ''
+				}
+			}
+
+			return { params, title, actions, team };
+
 		}
 
 	},
